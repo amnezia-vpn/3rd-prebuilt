@@ -98,13 +98,13 @@
 #define HAVE_GLOB_GL_FLAGS_MEMBER 1
 
 /* Define to 1 if you have OpenSSL with Ed25519 support */
-/* #undef HAVE_OPENSSL_ED25519 */
+#define HAVE_OPENSSL_ED25519 1
 
 /* Define to 1 if you have OpenSSL with X25519 support */
-/* #undef HAVE_OPENSSL_X25519 */
+#define HAVE_OPENSSL_X25519 1
 
 /* Define to 1 if you have OpenSSL with Poly1305 support */
-/* #undef HAVE_OPENSSL_EVP_POLY1305 */
+#define HAVE_OPENSSL_EVP_POLY1305 1
 
 /* Define to 1 if you have gcrypt with ChaCha20/Poly1305 support */
 /* #undef HAVE_GCRYPT_CHACHA_POLY */
@@ -112,19 +112,19 @@
 /*************************** FUNCTIONS ***************************/
 
 /* Define to 1 if you have the `EVP_chacha20' function. */
-/* #undef HAVE_OPENSSL_EVP_CHACHA20 */
+#define HAVE_OPENSSL_EVP_CHACHA20 1
 
 /* Define to 1 if you have the `EVP_KDF_CTX_new_id' or `EVP_KDF_CTX_new` function. */
 /* #undef HAVE_OPENSSL_EVP_KDF_CTX */
 
 /* Define to 1 if you have the `FIPS_mode' function. */
-/* #undef HAVE_OPENSSL_FIPS_MODE */
+#define HAVE_OPENSSL_FIPS_MODE 1
 
 /* Define to 1 if you have the `EVP_DigestSign' function. */
-/* #undef HAVE_OPENSSL_EVP_DIGESTSIGN */
+#define HAVE_OPENSSL_EVP_DIGESTSIGN 1
 
 /* Define to 1 if you have the `EVP_DigestVerify' function. */
-/* #undef HAVE_OPENSSL_EVP_DIGESTVERIFY */
+#define HAVE_OPENSSL_EVP_DIGESTVERIFY 1
 
 /* Define to 1 if you have the `OPENSSL_ia32cap_loc' function. */
 /* #undef HAVE_OPENSSL_IA32CAP_LOC */
