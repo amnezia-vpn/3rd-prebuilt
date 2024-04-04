@@ -2,11 +2,11 @@
 #define PACKAGE "libssh"
 
 /* Version number of package */
-#define VERSION "0.10.3"
+#define VERSION "0.10.6"
 
 #define SYSCONFDIR "etc"
-#define BINARYDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.3/build"
-#define SOURCEDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.3"
+#define BINARYDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.6/build"
+#define SOURCEDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.6"
 
 /* Global bind configuration file path */
 #define GLOBAL_BIND_CONFIG "/etc/ssh/libssh_server_config"
@@ -82,13 +82,13 @@
 /* Define to 1 if you have the <pthread.h> header file. */
 /* #undef HAVE_PTHREAD_H */
 
-/* Define to 1 if you have eliptic curve cryptography in openssl */
+/* Define to 1 if you have elliptic curve cryptography in openssl */
 #define HAVE_OPENSSL_ECC 1
 
-/* Define to 1 if you have eliptic curve cryptography in gcrypt */
+/* Define to 1 if you have elliptic curve cryptography in gcrypt */
 /* #undef HAVE_GCRYPT_ECC */
 
-/* Define to 1 if you have eliptic curve cryptography */
+/* Define to 1 if you have elliptic curve cryptography */
 #define HAVE_ECC 1
 
 /* Define to 1 if you have DSA */
@@ -115,10 +115,10 @@
 #define HAVE_OPENSSL_EVP_CHACHA20 1
 
 /* Define to 1 if you have the `EVP_KDF_CTX_new_id' or `EVP_KDF_CTX_new` function. */
-/* #undef HAVE_OPENSSL_EVP_KDF_CTX */
+#define HAVE_OPENSSL_EVP_KDF_CTX 1
 
 /* Define to 1 if you have the `FIPS_mode' function. */
-#define HAVE_OPENSSL_FIPS_MODE 1
+/* #undef HAVE_OPENSSL_FIPS_MODE */
 
 /* Define to 1 if you have the `EVP_DigestSign' function. */
 #define HAVE_OPENSSL_EVP_DIGESTSIGN 1
