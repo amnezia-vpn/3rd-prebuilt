@@ -41,7 +41,6 @@ typedef mbedtls_md_context_t *SHA384CTX;
 typedef mbedtls_md_context_t *SHA512CTX;
 typedef mbedtls_md_context_t *MD5CTX;
 typedef mbedtls_md_context_t *HMACCTX;
-typedef mbedtls_md_context_t *EVPCTX;
 
 #define SHA_DIGEST_LENGTH 20
 #define SHA_DIGEST_LEN SHA_DIGEST_LENGTH
@@ -72,6 +71,10 @@ struct mbedtls_ecdsa_sig {
     bignum r;
     bignum s;
 };
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 bignum ssh_mbedcry_bn_new(void);
 void ssh_mbedcry_bn_free(bignum num);
@@ -135,6 +138,10 @@ ssh_string make_ecpoint_string(const mbedtls_ecp_group *g, const
         mbedtls_ecp_point *p);
 
 #define ssh_fips_mode() false
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* HAVE_LIBMBEDCRYPTO */
 #endif /* LIBMBEDCRYPTO_H_ */

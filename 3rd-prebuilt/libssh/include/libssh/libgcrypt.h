@@ -32,7 +32,6 @@ typedef gcry_md_hd_t SHA384CTX;
 typedef gcry_md_hd_t SHA512CTX;
 typedef gcry_md_hd_t MD5CTX;
 typedef gcry_md_hd_t HMACCTX;
-typedef gcry_md_hd_t EVPCTX;
 #define SHA_DIGEST_LENGTH 20
 #define SHA_DIGEST_LEN SHA_DIGEST_LENGTH
 #define MD5_DIGEST_LEN 16
@@ -104,6 +103,10 @@ int ssh_gcry_rand_range(bignum rnd, bignum max);
     } while(0)
 /* Helper functions for data conversions.  */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Extract an MPI from the given s-expression SEXP named NAME which is
    encoded using INFORMAT and store it in a newly allocated ssh_string
    encoded using OUTFORMAT.  */
@@ -113,6 +116,10 @@ ssh_string ssh_sexp_extract_mpi(const gcry_sexp_t sexp,
                                 enum gcry_mpi_format outformat);
 
 #define ssh_fips_mode() false
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* HAVE_LIBGCRYPT */
 
