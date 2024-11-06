@@ -5,8 +5,8 @@
 #define VERSION "0.10.6"
 
 #define SYSCONFDIR "etc"
-#define BINARYDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.6/build"
-#define SOURCEDIR "/Users/runner/work/3rd-build-ga/3rd-build-ga/libssh-0.10.6"
+#define BINARYDIR "/Users/runner/work/build-lib-amnezia/build-lib-amnezia/libssh-0.10.6/build"
+#define SOURCEDIR "/Users/runner/work/build-lib-amnezia/build-lib-amnezia/libssh-0.10.6"
 
 /* Global bind configuration file path */
 #define GLOBAL_BIND_CONFIG "/etc/ssh/libssh_server_config"
