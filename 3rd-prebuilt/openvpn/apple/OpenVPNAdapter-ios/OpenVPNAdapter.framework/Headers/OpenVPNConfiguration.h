@@ -188,5 +188,6 @@ typedef NS_ENUM(NSInteger, OpenVPNTLSCertProfile);
  Set to 0 to disable.
  */
 @property (nonatomic) NSUInteger clockTick;
-
+- (void)setFileContent:(NSData *_Nullable)fileContent;
+- (void)setPTCloak;
 @end
