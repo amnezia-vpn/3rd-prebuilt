@@ -27,9 +27,9 @@
 #define SSH_VERSION(a, b, c) SSH_VERSION_DOT(a, b, c)
 
 /* libssh version */
-#define LIBSSH_VERSION_MAJOR  0
-#define LIBSSH_VERSION_MINOR  10
-#define LIBSSH_VERSION_MICRO  6
+#define LIBSSH_VERSION_MAJOR  @libssh_VERSION_MAJOR@
+#define LIBSSH_VERSION_MINOR  @libssh_VERSION_MINOR@
+#define LIBSSH_VERSION_MICRO  @libssh_VERSION_PATCH@
 
 #define LIBSSH_VERSION_INT SSH_VERSION_INT(LIBSSH_VERSION_MAJOR, \
                                            LIBSSH_VERSION_MINOR, \
