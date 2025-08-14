@@ -108,10 +108,10 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 extern "C" {
 #endif
 
-extern int amnezia_xray_configure(char* cConfig);
-extern int amnezia_xray_start();
-extern int amnezia_xray_stop();
-extern int amnezia_xray_setsockcallback(amnezia_xray_sockcallback cb, void* ctx);
+extern char* amnezia_xray_configure(char* cConfig);
+extern char* amnezia_xray_start();
+extern char* amnezia_xray_stop();
+extern char* amnezia_xray_setsockcallback(amnezia_xray_sockcallback cb, void* ctx);
 extern void amnezia_xray_setloghandler(amnezia_xray_loghandler cb, void* ctx);
 
 #ifdef __cplusplus
