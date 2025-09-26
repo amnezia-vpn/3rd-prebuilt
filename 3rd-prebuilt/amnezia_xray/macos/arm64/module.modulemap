@@ -1,4 +1,0 @@
-module AmneziaXray {
-    umbrella header "amnezia_xray.h"
-    export *
-}
