@@ -116,6 +116,7 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 extern "C" {
 #endif
 
+extern void amnezia_xray_free(void* ptr);
 extern char* amnezia_xray_configure(char* cConfig);
 extern char* amnezia_xray_start(void);
 extern char* amnezia_xray_stop(void);
